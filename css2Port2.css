@@ -397,7 +397,7 @@ header nav .middle li{
     position: relative;
     padding: 4.1vw;
     box-shadow: 0 0 12px rgb(0 0 0 / 97%);
-    background-color: grey;
+    background-color: rgb(143, 143, 143);
     background-image: url("créativité.jpg");
     background-blend-mode: lighten;
     background-size: cover;
@@ -426,13 +426,10 @@ header nav .middle li{
   }
 
   .boxtt{
-    color: white;
-    text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000; 
+    color: rgb(0, 0, 0);
+    text-shadow: none;
     font-size: 1vw;
+    font-weight: 600;
   }
 
   .fade-in {
