@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Soirée PARISTOWN">
+    <meta name="keywords" content="xxx">
+    <meta name="author" content="Nicolas Tocque - Damien Ikovic - Sébastien Bourgeois">
+    <title>Paristown - ÉPISODE 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="ep1_style.css">
+</head>
+
+
+<!-- penser aux mots clés dans le head ! -->
+
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo_left">
+                <a href="home.html"><img class="logoParisTown" src="logos/paristown_logo_nr.png"></a>
+            </div>
+            <div class="toggle">
+                <i class="fa-solid fa-bars ouvrir"></i>
+                <i class="fa-solid fa-square-xmark fermer"></i>
+            </div>
+                <ul class="menu">
+                    <li><a class="menu_btn" href="infos.html">INFOS</a></li>
+                    <li><a class="menu_btn" href="next_paristown.html">NEXT PARISTOWN</a></li>
+                    <li><a class="menu_btn" href="last_paristown.html">LAST PARISTOWN</a></li>
+                    <li><a class="menu_btn" href="photos.html">PHOTOS</a></li>
+                    <li><a class="menu_btn" href="videos.html">VIDÉOS</a></li>
+                    <li><a class="menu_btn" href="shop.html">SHOP</a></li>
+                    <li><a class="menu_btn" href="contact.html">CONTACT</a></li>
+                </ul>
+            <div class="logo_right">
+				<a href="https://www.instagram.com/paristown_sound_system_culture/?hl=fr" target="_blank"><img width="52" height="auto" class="logoToutube" src="logos/insta.PNG"></a>
+				<a href="https://fb.me/e/1kPS0ke9y" target="_blank"><img width="52" height="auto" class="logoToutube" src="logos/facebook.PNG"></a>
+				<a href="https://www.youtube.com/playlist?list=PLf1fgbkRjsiJvDtUmzrB0_SfooENRMDNm" target="_blank"><img width="52" height="auto" class="logoToutube" src="logos/youtube.PNG"></a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="galerie">
+            <div class="corps">
+                <div class="image">
+                    <img src="photos/episodes/ImgPT1/1.jpg" style="width:60%" title="click to zoom" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>		
+                <div class="image">
+                    <img src="photos/episodes/ImgPT1/2.jpg" style="width:60%" title="click to zoom" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="image">
+                    <img src="photos/episodes/ImgPT1/3.jpg" style="width:60%" title="click to zoom" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="image">
+                    <img src="photos/episodes/ImgPT1/4.jpg" style="width:60%" title="click to zoom" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+                <div class="image">
+                    <img src="photos/episodes/ImgPT1/5.jpg" style="width:60%" title="click to zoom" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                </div>
+                <div class="image">
+                    <img src="photos/episodes/ImgPT1/6.jpg" style="width:60%" title="click to zoom" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                </div>
+                <div class="image">
+                    <img src="photos/episodes/ImgPT1/7.jpg" style="width:60%" title="click to zoom" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                </div>
+                <div class="image">
+                    <img src="photos/episodes/ImgPT1/8.jpg" style="width:60%" title="click to zoom" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                </div>
+                <div class="image">
+                    <img src="photos/episodes/ImgPT1/9.jpg" style="width:60%" title="click to zoom" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                </div>
+            </div>
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="mySlides">
+                        <img src="photos/episodes/ImgPT1/1.jpg" style="width:220%">      
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="photos/episodes/ImgPT1/2.jpg" style="width:220%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="photos/episodes/ImgPT1/3.jpg" style="width:220%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="photos/episodes/ImgPT1/4.jpg" style="width:220%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="photos/episodes/ImgPT1/5.jpg" style="width:220%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="photos/episodes/ImgPT1/6.jpg" style="width:220%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="photos/episodes/ImgPT1/7.jpg" style="width:220%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="photos/episodes/ImgPT1/8.jpg" style="width:220%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="photos/episodes/ImgPT1/9.jpg" style="width:220%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+            <script>
+                // Open the Modal
+                function openModal() {
+                    document.getElementById("myModal").style.display = "block";
+                }
+
+                // Close the Modal
+                function closeModal() {
+                    document.getElementById("myModal").style.display = "none";
+                }
+                var slideIndex = 1;
+                showSlides(slideIndex);
+
+                // Next/previous controls
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    var dots = document.getElementsByClassName("demo");
+                    var captionText = document.getElementById("caption");
+                    if (n > slides.length) {slideIndex = 1}
+                        if (n < 1) {slideIndex = slides.length}
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex-1].style.display = "block";
+                            dots[slideIndex-1].className += " active";
+                            captionText.innerHTML = dots[slideIndex-1].alt;
+                        }
+            </script>
+        </div>
+        
+        <script src="script/app.js"></script>
+
+    </main>
+
+</body>
+</html>

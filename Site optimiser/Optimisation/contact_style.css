@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    display: block;
+    position: static;
+    line-height: 24px;
+    z-index: auto;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+
+/* ------------------ HEADER ------------------------------------------------------------------ */
+header{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #ffffff;
+    padding: 0 2rem;
+    border-bottom: 1px solid #000000;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* --- Logo Paristown --- */
+.logoParisTown{
+    width: 120px;
+}
+
+
+/* --- Icone menu resp. --- */
+.toggle{
+    display: none;
+    color: #000000;
+    font-size: xx-large;
+    z-index: 1;
+}
+
+
+/* ------ Menu header ------ */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 900px;
+    margin: auto;
+}
+.menu_btn{
+    text-decoration: none;
+    border: 2px black solid;
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 30px;
+}
+.menu_btn:hover{
+	background-color: #000000;
+	color: white;
+	border-color: rgb(231, 118, 130);
+	transition: all 0.5s;
+}
+
+
+/* ------ @media de la barre de navigation ------------------------  */
+@media all and (max-width: 1250px) {
+    header{
+        background: #ffffff;
+    }
+    .toggle{
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: static;
+        z-index: 20;
+    }
+    .logo_left{
+        position: relative;
+        z-index: 20;
+    }
+    .ouvrir{
+        display: block;
+    }
+    .fermer{
+        display: none;
+    }
+    .open .ouvrir{
+        display: none;
+    }
+    .open .fermer{
+        display: block;
+    }
+    .open .container{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 240px;
+        height: 100vh;
+        background: #F0F0F0;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-evenly;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+    .open .menu{
+        transform: translateX(0);
+    }
+}
+
+
+/* ------------------ MAIN ------------------------------------------------------------------ */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+/* ------------------ BOX CONTACT ------------------------------------------------------------------ */
+
+
+/* --- CONATINER --- */
+.container{
+    margin-top: 150px;
+}
+
+
+/*--- BOX MESSAGE --- */
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 800px;
+    height: 550px;
+    padding: 50px 50px;
+    background-color: #000000;
+    border-radius: 10px;
+    border: 2px solid rgb(231, 118, 130);
+}
+.form_menu {
+    width: 100%;
+    margin-bottom: 12px;
+    position: relative;
+}
+.form_menu_label {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    opacity: 0;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+.form_menu_input {
+    font-size: 16px;
+    padding: 3px 10px;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 1px solid transparent;
+    width: 97%;
+}
+.form_menu_input::-webkit-input-placeholder {
+    color: #0D1B2B;
+    transform: translateY(4px);
+}
+.form_menu_input:focus::-webkit-input-placeholder {
+    visibility: hidden;
+    opacity: 0;
+}
+.form_menu_input:focus {
+    outline: none;
+    border-bottom: 4px solid #a5ee6e;
+    width: 80%;
+    transition: all 0.25s;
+}
+.form_menu_input:focus:invalid {
+    border-bottom: 4px solid #e42908;
+}
+.form_menu_input:focus + .form_menu_label {
+    opacity: 1;
+    font-size: 13px;
+}
+.form_message{
+    margin-top: 40px;
+}
+.form_message_label{
+    color: #ffffff;
+}
+.form_message .message_input {
+    width: 97%;
+}
+.submit_btn {
+    display: block;
+    padding: 5px 30px;
+    border: 1px solid #E6E7E4;
+    background-color: transparent;
+    border-color: #ffffff;
+    border-radius: 8px;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.submit_btn:hover {
+    transform: scale(1.02) translateY(-2px);
+    background-color: #ffffff;
+    border-color: rgb(231, 118, 130);
+    color: #000000;
+    font-weight: 200;
+}
